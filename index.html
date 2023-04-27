@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <script src="js/script.js"></script>
+    <title>Zadanie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- czlonkostwo.html -->
+    <form action="" method="post" id="theForm">
+        <fieldset>
+          <div><label for="studia">Studia</label> <select name="studia" id="studia" required>
+			    <option value="Dzienne">Dzienne</option>
+			    <option value="Wieczorowe">Wieczorowe</option>
+			    <option value="Zaoczne">Zaoczne</option>
+			</select></div>
+            <div><label for="rok">Rok Studiów</label> <select name="rok" id="rok" required>
+			    <option value="I">I</option>
+			    <option value="II">II</option>
+			    <option value="III">III</option>
+                <option value="IV">IV</option>
+                <option value="V">V</option>
+			</select></div>
+			<div><label for="student_id">Identyfikator studenta</label><input type="number" name="student_id" id="student_id" min="1" required></div>
+			<div><label for="name">Imię i Nazwisko</label><input type="text" name="name" id="name"></div>
+            <div><label for="mail">E-mail</label><input type="text" name="mail" id="mail" required></div>
+            <div><label for="subject">Przedmiot</label> <select name="subject" id="subject" required>
+			    <option value="programowanie">Programowanie Aplikacji Internetowych</option>
+			</select></div>
+            <div><label for="test1">Ocena z testu pierwszego</label><input type="number" name="test1" id="test1" min="0" max="100" required></div>
+            <div><label for="test2">Ocena z testu drugiego</label><input type="number" name="test2" id="test2" min="0" max="100" required></div>
+            <div><label for="test3">Ocena z testu trzeciego</label><input type="number" name="test3" id="test3" min="0" max="100" required></div>
+            <div><label for="homework">Ocena z zadań domowych</label><input type="number" name="homework" id="homework" min="0" max="100" required></div>
+			<input type="submit" value="Dodaj" id="submit">
+        </fieldset>
+        <p id="demo"></p>
+    </form>
+</body>
+</html>
